@@ -1,0 +1,22 @@
+{
+  "name": "digifarm",
+  "version": "1.0.0",
+  "description": "A full-stack smart farming web application",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "install-server": "cd server && npm install",
+    "install-client": "cd client && npm install",
+    "install-all": "npm install && npm run install-server && npm run install-client",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "keywords": ["farming", "agriculture", "smart-farming", "react", "nodejs"],
+  "author": "DigiFarm Team",
+  "license": "MIT"
+}
